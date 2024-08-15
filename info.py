@@ -37,7 +37,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # auth_channel means force subscribe channel.
-auth_channel = environ.get('AUTH_CHANNEL', '-1001694019472') # give your force subscribe channel id here else leave it blank
+auth_channel = environ.get('AUTH_CHANNEL', '-1002228307790') # give your force subscribe channel id here else leave it blank
 auth_grp = environ.get('AUTH_GROUP', '-1002085064896') # give your force subscribe group id here else leave it blank
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
@@ -66,10 +66,10 @@ OWNER_USERNAME = environ.get('OWNER_USERNAME', 'Billy_Butcher_Man') # owner user
 
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+4kuRMsdxLR03YzI1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/FilesUlagam0')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/FilesUlagam1')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_Download_Links')
 VERIFY_TUTORIAL = environ.get('VERIFY_TUTORIAL', 'https://t.me/How_Download_Links')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'FilesUlagam0') # Support Chat Link Without https:// or @
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'FilesUlagam1') # Support Chat Link Without https:// or @
 
 # True Or False
 PM_SEARCH = bool(environ.get('PM_SEARCH', True))
